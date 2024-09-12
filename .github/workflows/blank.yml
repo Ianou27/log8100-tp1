@@ -2,7 +2,7 @@ name: Close Issue Trigger
 
 on:
   issues:
-    types: [Terminée]
+    types: [closed]
 
 jobs:
   document-issue-closure:
