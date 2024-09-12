@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Log issue creation
-        run: echo "Issue created: ${{ github.event.issue.title }}"
+        run: echo "Issue created"
 
   document-issue-closure:
     if: ${{ github.event.action == 'closed' }}  # Only runs for issue closure
     runs-on: ubuntu-latest
     steps:
       - name: Log issue closure
-        run: echo "Issue closed: ${{ github.event.issue.title }}"
+        run: echo "Issue closed }}"
