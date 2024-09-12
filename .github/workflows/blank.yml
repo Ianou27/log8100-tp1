@@ -1,0 +1,12 @@
+name: Close Issue Trigger
+
+on:
+  issues:
+    types: [Terminée]
+
+jobs:
+  document-issue-closure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log issue closure
+        run: echo "Issue closed"
